@@ -36,12 +36,7 @@ runs:
   - name: Install dependencies
     shell: bash
     run: |
-      # Download GH's signing key for GH CLI 
-      # https://github.com/cli/cli/blob/1a102edb52153bd90a3d339af4686d8d1af84bbf/docs/install_linux.md?plain=1#L25
-      rpm --import "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x23F3D4EA75716059"
-      zypper addrepo https://cli.github.com/packages/rpm/gh-cli.repo
-      zypper refresh
-      zypper in -y osc gh
+      zypper in -y osc
 
   - name: Set OBS config
     shell: bash
