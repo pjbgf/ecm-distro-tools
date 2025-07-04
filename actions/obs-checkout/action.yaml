@@ -54,7 +54,6 @@ runs:
       
       echo "Checking out ${DST_PROJECT}/${PKG_NAME}"
       osc checkout "${DST_PROJECT}" "${PKG_NAME}"
-      cd "${DST_PROJECT}/${PKG_NAME}"
 
     env:
       PKG_NAME: ${{ inputs.package-name }}
